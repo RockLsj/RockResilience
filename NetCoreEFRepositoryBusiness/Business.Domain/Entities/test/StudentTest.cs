@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 using Common.Domain.Entities;
-
+ 
 namespace Business.Domain.Entities
 {
     public class StudentTest : IEntity
