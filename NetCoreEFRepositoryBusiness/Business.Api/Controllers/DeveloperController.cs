@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Business.Domain.Entities;
-using Microsoft.AspNetCore.Http;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Business.EntityFrameworkCore.Repositories;
-using Business.EntityFrameworkCore.UnitOfWorks;
-using System.Linq.Expressions;
-using Common.Extensions;
+
 using Common.Data;
-using Business.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using Business.Services.DTO.Rsp;
+using Business.EntityFrameworkCore.UnitOfWorks;
+using Business.Domain.Entities;
 using Business.Services;
 using Business.Services.DTO.Req;
 
@@ -24,7 +15,7 @@ namespace Business.Api.Controllers
     {
         private IUnitOfWork _unitOfWork;
 
-        private ProductsPassPercentageTestService _service = new ProductsPassPercentageTestService();
+        private TestService _service = new TestService();
 
         private Rsp rsp = new Rsp();
 

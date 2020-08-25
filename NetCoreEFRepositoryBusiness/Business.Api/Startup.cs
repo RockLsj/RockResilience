@@ -1,22 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Business.EntityFrameworkCore;
-using Business.EntityFrameworkCore.Repositories;
-//using Business.EntityFrameworkCore.UnitOfWorks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
+
 using Business.EntityFrameworkCore.UnitOfWorks;
-using Business.EntityFrameworkCore.Repositories.Interfaces;
+using Business.EntityFrameworkCore;
+using Business.EntityFrameworkCore.Repositories;
 
 namespace Business.Api
 {
@@ -36,7 +27,7 @@ namespace Business.Api
             options.SerializerSettings.ReferenceLoopHandling=Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddSwaggerGen();
 
-            services.AddDbContext<ApplicationContext>(options =>
+            services.AddDbContext<RockResilienceContext>(options =>
             options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection"),
                 b => b.MigrationsAssembly("Business.Api")));
@@ -45,7 +36,7 @@ namespace Business.Api
             #region Repositories
 
             //services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddTransient<IApplicationDbContext, ApplicationContext>();
+            services.AddTransient<IRockResilienceDbContext, RockResilienceContext>();
 
             //test
             services.AddTransient<IDeveloperRepository, DeveloperRepository>();
@@ -53,14 +44,6 @@ namespace Business.Api
             services.AddTransient<IConsumeDetailTestsRepository, ConsumeDetailTestsRepository>();
             services.AddTransient<IStudentTest2Repository, StudentTest2Repository>();
             services.AddTransient<IStudentTest3Repository, StudentTest3Repository>();
-
-            services.AddTransient<IC_WORK_DESC_TRepository, C_WORK_DESC_TRepository>();
-            services.AddTransient<IWriteNumberRepository, WriteNumberRepository>();
-            services.AddTransient<IStationResumeRepository, StationResumeRepository>();
-            services.AddTransient<IStationResume_FailRepository, StationResume_FailRepository>();
-            services.AddTransient<IR_STATION_REC_TRepository, R_STATION_REC_TRepository>();
-            services.AddTransient<IStation_informationRepository, Station_informationRepository>();
-            services.AddTransient<IBAH_MOProcessFlowRepository, BAH_MOProcessFlowRepository>();
 
             #endregion
 

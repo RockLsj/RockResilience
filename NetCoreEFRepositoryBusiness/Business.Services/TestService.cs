@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+
 using Common.Extensions;
 using Business.Domain.Entities;
 using Business.EntityFrameworkCore.UnitOfWorks;
@@ -11,7 +12,7 @@ using Business.Services.DTO.Rsp;
 
 namespace Business.Services
 {
-    public class ProductsPassPercentageTestService
+    public class TestService
     {
         public IUnitOfWork UnitOfWork
         {

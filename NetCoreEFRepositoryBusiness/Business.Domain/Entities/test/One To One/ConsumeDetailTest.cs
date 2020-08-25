@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Common.Domain.Entities;
+﻿using Common.Domain.Entities;
 
 namespace Business.Domain.Entities
 {

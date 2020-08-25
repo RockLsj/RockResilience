@@ -1,18 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
-using Common.Domain;
-using Common.Domain.Entities;
-using EntityFrameworkCore.Interface;
 using Microsoft.Data.SqlClient;
+
+using Common.Domain.Entities;
 using Common.Extensions;
+using EntityFrameworkCore.Interface;
 
 namespace EntityFrameworkCore.Repository
 {
@@ -459,8 +457,6 @@ namespace EntityFrameworkCore.Repository
             return await _dbContext.SaveChangesAsync();
         }
 
-        #region add by 罗世杰 on 202008.12
-
         public IEnumerable<TEntity> GetByQuery(Expression<Func<TEntity, bool>> where)
         {
             if (where == null)
@@ -469,8 +465,6 @@ namespace EntityFrameworkCore.Repository
             }
             return this._dbSet.AsNoTracking().Where(where);
         }
-
-        #endregion
 
     }
 }

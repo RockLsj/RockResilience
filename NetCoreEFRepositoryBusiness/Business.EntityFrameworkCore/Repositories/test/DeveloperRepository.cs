@@ -1,23 +1,21 @@
-﻿using Business.Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using EntityFrameworkCore.Repository;
 using System.Linq.Expressions;
-using Common.Extensions;
 using System.Threading.Tasks;
-using System.Collections;
 using System.Data.Common;
 using System.Data;
+
+using Business.Domain.Entities;
+using EntityFrameworkCore.Repository;
 
 namespace Business.EntityFrameworkCore.Repositories
 {
     public class DeveloperRepository :
-        BaseRepository<ApplicationContext, DeveloperTest, int>,
+        BaseRepository<RockResilienceContext, DeveloperTest, int>,
         IDeveloperRepository
     {
-        public DeveloperRepository(ApplicationContext context) : base(context)
+        public DeveloperRepository(RockResilienceContext context) : base(context)
         {
 
         }

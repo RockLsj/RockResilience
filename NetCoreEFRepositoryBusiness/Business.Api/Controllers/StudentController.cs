@@ -14,9 +14,9 @@ namespace Business.Api.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private IApplicationDbContext _context;
+        private IRockResilienceDbContext _context;
 
-        public StudentController(IApplicationDbContext context)
+        public StudentController(IRockResilienceDbContext context)
         {
             _context = context;
         }

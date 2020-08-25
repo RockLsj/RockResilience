@@ -1,16 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
+
 using Common.Domain.Entities;
 using EntityFrameworkCore.Interface;
 using Business.Domain.Entities;
-using Business.EntityFrameworkCore;
 
 namespace Business.EntityFrameworkCore.Repositories
 {
@@ -251,7 +249,7 @@ namespace Business.EntityFrameworkCore.Repositories
     }
 
     public interface IDeveloperRepository<TEntity, TKey>
-        : IRepository<ApplicationContext, TEntity, TKey>
+        : IRepository<RockResilienceContext, TEntity, TKey>
         where TEntity : class, IEntity<TKey>
     {
     }

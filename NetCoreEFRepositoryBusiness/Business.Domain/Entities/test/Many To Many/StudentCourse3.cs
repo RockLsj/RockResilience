@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Business.Domain.Entities
+﻿namespace Business.Domain.Entities
 {
     public class StudentCourse3
     {

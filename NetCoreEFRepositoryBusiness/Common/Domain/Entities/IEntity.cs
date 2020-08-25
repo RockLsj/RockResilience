@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Common.Domain.Entities
+﻿namespace Common.Domain.Entities
 {
     public interface IEntity : IEntity<int>
     {

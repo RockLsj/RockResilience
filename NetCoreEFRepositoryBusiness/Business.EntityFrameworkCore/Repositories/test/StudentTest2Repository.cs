@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
+
 using EntityFrameworkCore.Repository;
 using Business.Domain.Entities;
 
 namespace Business.EntityFrameworkCore.Repositories
 {
     public class StudentTest2Repository :
-        BaseRepository<ApplicationContext, StudentTest2, int>,
+        BaseRepository<RockResilienceContext, StudentTest2, int>,
         IStudentTest2Repository
     {
-        public StudentTest2Repository(ApplicationContext context) : base(context)
+        public StudentTest2Repository(RockResilienceContext context) : base(context)
         {
 
         }

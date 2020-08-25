@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Business.Services.DTO.Rsp
+﻿namespace Business.Services.DTO.Rsp
 {
     public class TestObjRsp
     {

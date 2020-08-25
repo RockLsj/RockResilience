@@ -5,8 +5,8 @@ using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
+
 using Common.Domain.Entities;
 
 namespace EntityFrameworkCore.Interface
@@ -297,10 +297,6 @@ namespace EntityFrameworkCore.Interface
 
         #endregion
 
-        #region add by 罗世杰 on 202008.12
-
         IEnumerable<TEntity> GetByQuery(Expression<Func<TEntity, bool>> where);
-
-        #endregion
     }
 }

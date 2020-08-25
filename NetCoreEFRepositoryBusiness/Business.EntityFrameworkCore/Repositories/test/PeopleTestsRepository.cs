@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using Common.Extensions;
+﻿using System.Linq;
+
 using EntityFrameworkCore.Repository;
 using Business.Domain.Entities;
 
 namespace Business.EntityFrameworkCore.Repositories
 {
     public class PeopleTestsRepository :
-        BaseRepository<ApplicationContext, PeopleTest, int>,
+        BaseRepository<RockResilienceContext, PeopleTest, int>,
         IPeopleTestsRepository
     {
-        public PeopleTestsRepository(ApplicationContext context) : base(context)
+        public PeopleTestsRepository(RockResilienceContext context) : base(context)
         {
 
         }

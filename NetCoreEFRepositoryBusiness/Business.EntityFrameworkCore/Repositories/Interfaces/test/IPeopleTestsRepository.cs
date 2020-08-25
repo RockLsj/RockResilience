@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
+
 using Common.Domain.Entities;
 using EntityFrameworkCore.Interface;
 using Business.Domain.Entities;
@@ -18,7 +16,7 @@ namespace Business.EntityFrameworkCore.Repositories
     }
 
     public interface IPeopleTestsRepository<TEntity, TKey>
-        : IRepository<ApplicationContext, TEntity, TKey>
+        : IRepository<RockResilienceContext, TEntity, TKey>
         where TEntity : class, IEntity<TKey>
     {
     }
