@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -8,6 +8,10 @@ using Microsoft.Extensions.Hosting;
 using Business.EntityFrameworkCore.UnitOfWorks;
 using Business.EntityFrameworkCore;
 using Business.EntityFrameworkCore.Repositories;
+using System.Reflection;
+using System.IO;
+using System;
+using Microsoft.OpenApi.Models;
 
 namespace Business.Api
 {
@@ -25,7 +29,32 @@ namespace Business.Api
         {
             services.AddControllers().AddNewtonsoftJson(options =>
             options.SerializerSettings.ReferenceLoopHandling=Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "ToDo API",
+                    Description = "直通率API",
+                    //TermsOfService = new Uri(""),
+                    //Contact = new OpenApiContact
+                    //{
+                    //    Name = "WT",
+                    //    Email = string.Empty,
+                    //    Url = new Uri(""),
+                    //},
+                    //License = new OpenApiLicense
+                    //{
+                    //    Name = "",
+                    //    Url = new Uri(""),
+                    //}
+                });
+
+                // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+            });
 
             services.AddDbContext<RockResilienceContext>(options =>
             options.UseSqlServer(

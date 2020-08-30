@@ -9,6 +9,9 @@ using Business.Services.DTO.Req;
 
 namespace Business.Api.Controllers
 {
+    /// <summary>
+    /// 用于测试
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class DeveloperController : ControllerBase
@@ -28,6 +31,10 @@ namespace Business.Api.Controllers
 
         #region ***select***
 
+        /// <summary>
+        /// 获取第一个StudentTest3和关联的信息
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("GetFirstStudentTest3AndRelatedInfo")]
         public IActionResult GetFirstStudentTest3AndRelatedInfo()
         {
@@ -39,6 +46,13 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 根据:"姓名",获取单个开发人员信息
+        /// </summary>
+        /// <param name="req">
+        /// strName:姓名
+        /// </param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestByName")]
         public IActionResult GetDeveloperTestByName(ReqGetDeveloperTestByName req)
         {
@@ -50,6 +64,13 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 根据:Id,获取DeveloperTest
+        /// </summary>
+        /// <param name="req">
+        /// Id:DeveloperTest的Id
+        /// </param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestById")]
         public IActionResult GetDeveloperTestById(ReqGetDeveloperTestById req)
         {
@@ -61,6 +82,13 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 根据:Id,获取DeveloperTest V2
+        /// </summary>
+        /// <param name="req">
+        /// Id:DeveloperTest的Id
+        /// </param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestById2")]
         public IActionResult GetDeveloperTestById2(ReqGetDeveloperTestById req)
         {
@@ -72,6 +100,11 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 根据:Id,获取DeveloperTest(异步)
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestByIdAsync")]
         public IActionResult GetDeveloperTestByIdAsync(ReqGetDeveloperTestById req)
         {
@@ -83,6 +116,11 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 根据:Id,获取DeveloperTest v2(异步)
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestByIdAsync2")]
         public IActionResult GetDeveloperTestByIdAsync2(ReqGetDeveloperTestById req)
         {
@@ -94,6 +132,13 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 根据查询条件，获取DeveloperTest的记录数(同步)
+        /// </summary>
+        /// <param name="req">
+        /// ListName:姓名列表
+        /// </param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestCount")]
         public IActionResult GetDeveloperTestCount(ReqGetDeveloperTestCount req)
         {
@@ -105,6 +150,13 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 根据查询条件，获取DeveloperTest的记录数(异步)
+        /// </summary>
+        /// <param name="req">
+        /// ListName:姓名列表
+        /// </param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestCountAsync")]
         public IActionResult GetDeveloperTestCountAsync(ReqGetDeveloperTestCount req)
         {
@@ -116,6 +168,13 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 根据查询条件获取DeveloperTest列表
+        /// </summary>
+        /// <param name="req">
+        /// ListName:姓名列表
+        /// </param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestsByWhere1")]
         public IActionResult GetDeveloperTestsByWhere1(ReqGetDeveloperTestsByWhere req)
         {
@@ -127,6 +186,13 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 根据查询条件获取DeveloperTest列表(异步)
+        /// </summary>
+        /// <param name="req">
+        /// ListName:姓名列表
+        /// </param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestsByWhere1Asyc")]
         public IActionResult GetDeveloperTestsByWhere1Asyc(ReqGetDeveloperTestsByWhere req)
         {
@@ -138,6 +204,13 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 根据查询条件获取DeveloperTest列表(异步)
+        /// </summary>
+        /// <param name="req">
+        /// listId:Id列表
+        /// </param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestByWhereAsync")]
         public IActionResult GetDeveloperTestByWhereAsync(ReqGetDeveloperTestByWhereAsync req)
         {
@@ -180,6 +253,13 @@ namespace Business.Api.Controllers
         //    return Ok(rsp);
         //}
 
+        /// <summary>
+        /// 根据:用户名列表,获取DeveloperTest列表
+        /// </summary>
+        /// <param name="listName">
+        /// 用户名列表
+        /// </param>
+        /// <returns></returns>
         [HttpPost("GetDeveloperTestsByWhere")]
         public IActionResult GetDeveloperTestsByWhere(List<string> listName)
         {
@@ -192,11 +272,12 @@ namespace Business.Api.Controllers
         }
 
         /// <summary>
-        /// 根据查询条件(姓名列表,根据id列表(串)),获取DeveloperTest列表
-        /// 
-        /// add by 罗世杰 on 202008.12
+        /// 根据:姓名列表,id列表(串),获取DeveloperTest列表
         /// </summary>
-        /// <param name="listName"></param>
+        /// <param name="req">
+        /// ListName:姓名列表<br></br>
+        /// ListId:Id列表
+        /// </param>
         /// <returns></returns>
         [HttpPost("GetDeveloperTestsByConditionV2")]
         public IActionResult GetDeveloperTestsByConditionV2(DeveloperTestsWhereReq req)
@@ -230,6 +311,10 @@ namespace Business.Api.Controllers
 
         #region***select with obviously relationship***
 
+        /// <summary>
+        /// 从“1对1的关系表”中，进行查询
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("QueryFromOneToOne")]
         public IActionResult QueryFromOneToOne()
         {
@@ -241,6 +326,10 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 从“1对多关系表”中，进行查询
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("QueryFromOneToMany")]
         public IActionResult QueryFromOneToMany()
         {
@@ -259,7 +348,11 @@ namespace Business.Api.Controllers
         /// <summary>
         /// 添加单个DeveloperTest
         /// </summary>
-        /// <param name="e"></param>
+        /// <param name="e">
+        /// Name:姓名<br></br>
+        /// Followers:关注者<br></br>
+        /// Id
+        /// </param>
         /// <returns></returns>
         [HttpPost("AddDeveloperTest")]
         public IActionResult AddDeveloperTest(DeveloperTest e)
@@ -272,7 +365,12 @@ namespace Business.Api.Controllers
         /// <summary>
         /// 添加多个DeveloperTest
         /// </summary>
-        /// <param name="list"></param>
+        /// <param name="list">
+        /// DeveloperTest列表<br></br>
+        /// Name:姓名<br></br>
+        /// Followers:关注者<br></br>
+        /// Id
+        /// </param>
         /// <returns></returns>
         [HttpPost("AddDeveloperTests")]
         public IActionResult AddDeveloperTests(List<DeveloperTest> list)
@@ -289,7 +387,11 @@ namespace Business.Api.Controllers
         /// <summary>
         /// 修改单个DeveloperTest
         /// </summary>
-        /// <param name="e"></param>
+        /// <param name="e">
+        /// Name:姓名<br></br>
+        /// Followers:关注者<br></br>
+        /// Id
+        /// </param>
         /// <returns></returns>
         [HttpPut("UpdateDeveloperTest")]
         public IActionResult UpdateDeveloperTest(DeveloperTest e)
@@ -302,7 +404,12 @@ namespace Business.Api.Controllers
         /// <summary>
         /// 修改多个DeveloperTest
         /// </summary>
-        /// <param name="list"></param>
+        /// <param name="list">
+        /// DeveloperTest列表<br></br>
+        /// Name:姓名<br></br>
+        /// Followers:关注者<br></br>
+        /// Id
+        /// </param>
         /// <returns></returns>
         [HttpPut("UpdateDeveloperTests")]
         public IActionResult UpdateDeveloperTests(List<DeveloperTest> list)
@@ -340,7 +447,7 @@ namespace Business.Api.Controllers
         /// <summary>
         /// 删除多个DeveloperTest。根据id列表(串)
         /// </summary>
-        /// <param name="ids"></param>
+        /// <param name="ids">Id列表</param>
         /// <returns></returns>
         [HttpDelete("DeleteDeveloperTests")]
         public IActionResult DeleteDeveloperTests(List<int> ids)
@@ -361,6 +468,11 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 删除DeveloperTest(异步)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("DeleteAsyncDeveloperTest")]
         public IActionResult DeleteAsyncDeveloperTest(int id)
         {
@@ -369,6 +481,11 @@ namespace Business.Api.Controllers
             return Ok(rsp);
         }
 
+        /// <summary>
+        /// 删除多个DeveloperTest。根据id列表(串)(异步)
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
         [HttpDelete("DeleteAsyncDeveloperTests")]
         public IActionResult DeleteAsyncDeveloperTests(List<int> ids)
         {
@@ -381,6 +498,10 @@ namespace Business.Api.Controllers
 
         #region ***execute sql***
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         [HttpPost("ExecuteSqlDeveloperTest")]
         public IActionResult ExecuteSqlDeveloperTest()
         {

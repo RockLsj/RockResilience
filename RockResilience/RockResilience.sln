@@ -17,6 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore", "..\N
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetCoreEFRepositoryBusiness", "NetCoreEFRepositoryBusiness", "{4284735A-10D4-438D-A931-1513FBDBB8C1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Schedules", "Schedules", "{4C9D038D-767D-4E4F-825C-5296A84922D7}"
+	ProjectSection(SolutionItems) = preProject
+		development schedules.txt = development schedules.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{66FC2B7B-B842-40FE-A21D-A1A2D5BCD807}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "..\FrontEnd\App\App.csproj", "{403E4691-3D21-4F4A-998E-6D39DF5050F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +56,10 @@ Global
 		{79736007-EEA8-4D2C-87DF-F47722DB5234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79736007-EEA8-4D2C-87DF-F47722DB5234}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79736007-EEA8-4D2C-87DF-F47722DB5234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{403E4691-3D21-4F4A-998E-6D39DF5050F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403E4691-3D21-4F4A-998E-6D39DF5050F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403E4691-3D21-4F4A-998E-6D39DF5050F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403E4691-3D21-4F4A-998E-6D39DF5050F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +71,7 @@ Global
 		{AABB9F6D-05DA-4786-BE63-08A63152C0EE} = {4284735A-10D4-438D-A931-1513FBDBB8C1}
 		{DD9D8BCF-C453-4CDF-A1B2-D2761BE1C2C6} = {4284735A-10D4-438D-A931-1513FBDBB8C1}
 		{79736007-EEA8-4D2C-87DF-F47722DB5234} = {4284735A-10D4-438D-A931-1513FBDBB8C1}
+		{403E4691-3D21-4F4A-998E-6D39DF5050F7} = {66FC2B7B-B842-40FE-A21D-A1A2D5BCD807}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2ECFD30C-A2A8-4E2A-A743-92980F5986B8}
