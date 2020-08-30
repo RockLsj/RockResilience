@@ -56,6 +56,9 @@ namespace Business.Api
                 c.IncludeXmlComments(xmlPath);
             });
 
+            /*
+             * this is important
+             */
             services.AddDbContext<RockResilienceContext>(options =>
             options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection"),
@@ -64,7 +67,6 @@ namespace Business.Api
 
             #region Repositories
 
-            //services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<IRockResilienceDbContext, RockResilienceContext>();
 
             //test

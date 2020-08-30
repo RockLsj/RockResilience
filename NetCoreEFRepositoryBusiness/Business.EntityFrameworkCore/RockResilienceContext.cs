@@ -10,6 +10,7 @@ namespace Business.EntityFrameworkCore
         public RockResilienceContext(DbContextOptions<RockResilienceContext> options) : base(options)
         {
         }
+
         public DbSet<DeveloperTest> DeveloperTests { get; set; }
         public DbSet<StudentTest> StudentTests { get; set; }
         public DbSet<PeopleTest> PeopleTests { get; set; }
@@ -24,11 +25,6 @@ namespace Business.EntityFrameworkCore
         public async Task<int> SaveChanges()
         {
             return await base.SaveChangesAsync();
-        }
-
-        public void Dispose()
-        {
-            base.Dispose();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

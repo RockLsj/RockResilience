@@ -20,15 +20,25 @@ namespace Business.EntityFrameworkCore.Repositories
 
         }
 
-        #region 已测
+        #region Already testing
 
         //insert--------------------------------------------------------------------------------------------
 
+        /// <summary>
+        /// Add DeveloperTest
+        /// </summary>
+        /// <param name="developer"></param>
+        /// <returns></returns>
         public bool Insert(DeveloperTest developer)
         {
             return base.Insert(developer);
         }
 
+        /// <summary>
+        /// add some DeveloperTests
+        /// </summary>
+        /// <param name="developers"></param>
+        /// <returns></returns>
         public bool Insert(List<DeveloperTest> developers)
         {
             return base.Insert(developers);
@@ -36,11 +46,21 @@ namespace Business.EntityFrameworkCore.Repositories
 
         //update--------------------------------------------------------------------------------------------
 
+        /// <summary>
+        /// update DeveloperTest
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public bool Update(DeveloperTest e)
         {
             return base.Update(e);
         }
 
+        /// <summary>
+        /// update some DeveloperTest
+        /// </summary>
+        /// <param name="developers"></param>
+        /// <returns></returns>
         public bool Update(List<DeveloperTest> developers)
         {
             return base.Update(developers);
@@ -49,7 +69,7 @@ namespace Business.EntityFrameworkCore.Repositories
         //select--------------------------------------------------------------------------------------------
 
         /// <summary>
-        /// 获取DeveloperTest所有数据(用于某些类型表,一般的查询不会使用该方法)
+        /// Gete all DeveloperTests
         /// </summary>
         /// <returns></returns>
         public List<DeveloperTest> GetAllDeveloperTest()
@@ -58,14 +78,34 @@ namespace Business.EntityFrameworkCore.Repositories
             return iq != null ? iq.ToList() : new List<DeveloperTest>();
         }
 
+        /// <summary>
+        /// Get DeveloperTest by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public DeveloperTest GetDeveloperTestById(int id)
         {
             return base.FirstOrDefault(id);
         }
 
+        /// <summary>
+        /// Get DeveloperTests by conditions
+        /// </summary>
+        /// <param name="where"></param>
+        /// <returns></returns>
         public IEnumerable<DeveloperTest> GetDeveloperTestByWhere(Expression<Func<DeveloperTest, bool>> where)
         {
             return base.GetByQuery(where);
+        }
+
+        /// <summary>
+        /// Get DeveloperTests by conditions(asynchronous)
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
+        public Task<List<DeveloperTest>> GetDeveloperTestByWhereAsync(Expression<Func<DeveloperTest, bool>> predicate)
+        {
+            return base.GetAllListAsync(predicate);
         }
 
         //public async Task<List<DeveloperTest>> GetDeveloperTestByWhereAsync(Expression<Func<DeveloperTest, bool>> predicate)
@@ -73,73 +113,117 @@ namespace Business.EntityFrameworkCore.Repositories
         //    return await base.GetAllListAsync(predicate);
         //}
 
-        public Task<List<DeveloperTest>> GetDeveloperTestByWhereAsync(Expression<Func<DeveloperTest, bool>> predicate)
-        {
-            return base.GetAllListAsync(predicate);
-        }
-
         #region extention
 
+        /// <summary>
+        /// Validate if exists DeveloperTest or not by conditions
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
         public bool exist(Expression<Func<DeveloperTest, bool>> predicate)
         {
             long nCount = base.Count(predicate);
             return nCount > 0 ? true : false;
         }
 
-        //ok
+        /// <summary>
+        /// Get the IQueryable of DeveloperTest
+        /// </summary>
+        /// <returns></returns>
         public IQueryable<DeveloperTest> GetDeveloperTestAll()
         {
             return base.GetAll();
         }
 
+        /// <summary>
+        /// Get IQueryable of DeveloperTests by conditions
+        /// </summary>
+        /// <param name="propertySelectors"></param>
+        /// <returns></returns>
         public IQueryable<DeveloperTest> GetDeveloperTestAllIncluding(params Expression<Func<DeveloperTest, bool>>[] propertySelectors)
         {
             return base.GetAllIncluding(propertySelectors);
         }
 
-        //ok
+        /// <summary>
+        /// Get DeveloperTest by conditions
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <param name="isNoTracking"></param>
+        /// <returns></returns>
         public DeveloperTest FirstOrDefaultDeveloperTest(Expression<Func<DeveloperTest, bool>> predicate, bool isNoTracking = true)
         {
             return base.FirstOrDefault(predicate, isNoTracking);
         }
 
-        //ok
+        /// <summary>
+        /// Get DeveloperTest by conditions(asynchronous)
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <param name="isNoTracking"></param>
+        /// <returns></returns>
         public Task<DeveloperTest> FirstOrDefaultAsyncDeveloperTest(Expression<Func<DeveloperTest, bool>> predicate, bool isNoTracking = true)
         {
             return base.FirstOrDefaultAsync(predicate, isNoTracking);
         }
 
-        //ok
+        /// <summary>
+        /// Get DeveloperTest by Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public DeveloperTest FirstOrDefaultDeveloperTest(int id)
         {
             return base.FirstOrDefault(id);
         }
 
-        //ok
+        /// <summary>
+        /// Get DeveloperTest by Id(asynchronous)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Task<DeveloperTest> FirstOrDefaultAsyncDeveloperTest(int id)
         {
             return base.FirstOrDefaultAsync(id);
         }
 
-        //ok
+        /// <summary>
+        /// Get row count of DeveloperTest by conditions
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
         public long DeveloperTestCount(Expression<Func<DeveloperTest, bool>> predicate = null)
         {
             return base.Count(predicate);
         }
 
-        //ok
+        /// <summary>
+        /// Get row count of DeveloperTest by conditions(asynchronous)
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
         public Task<long> DeveloperTestCountAsync(Expression<Func<DeveloperTest, bool>> predicate = null)
         {
             return base.CountAsync(predicate);
         }
 
-        //ok
+        /// <summary>
+        /// Get IQueryable of DeveloperTest by conditions
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <param name="isNoTracking"></param>
+        /// <returns></returns>
         public IQueryable<DeveloperTest> DeveloperTestLoad(Expression<Func<DeveloperTest, bool>> predicate, bool isNoTracking = true)
         {
             return base.Load(predicate, isNoTracking);
         }
 
-        //ok
+        /// <summary>
+        /// Get IQueryable of DeveloperTest by conditions(asynchronous)
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <param name="isNoTracking"></param>
+        /// <returns></returns>
         public Task<IQueryable<DeveloperTest>> DeveloperTestLoadAsync(Expression<Func<DeveloperTest, bool>> predicate, bool isNoTracking = true)
         {
             return base.LoadAsync(predicate, isNoTracking);
@@ -149,25 +233,41 @@ namespace Business.EntityFrameworkCore.Repositories
 
         //delete--------------------------------------------------------------------------------------------
 
+        /// <summary>
+        /// Delete DeveloperTest
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public bool DeleteById(DeveloperTest e)
         {
             return base.Delete(e);
         }
 
+        /// <summary>
+        /// delete some DeveloperTests
+        /// </summary>
+        /// <param name="entitys"></param>
+        /// <returns></returns>
         public bool Delete(List<DeveloperTest> entitys)
         {
             return base.Delete(entitys);
         }
 
+        /// <summary>
+        /// Delete DeveloperTest(asynchronous)
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="isSaveChange"></param>
+        /// <returns></returns>
         public Task<bool> DeleteAsyncDeveloperTest(DeveloperTest entity, bool isSaveChange = true)
         {
             return base.DeleteAsync(entity, isSaveChange);
         }
 
         /// <summary>
-        /// 删除实体列表(异步方式)
+        /// Delete DeveloperTest(asynchronous)
         /// </summary>
-        /// <param name="entitys">实体列表</param>
+        /// <param name="entitys"></param>
         /// <param name="isSaveChange"></param>
         /// <returns></returns>
         public Task<bool> DeleteAsyncDeveloperTest(List<DeveloperTest> entitys, bool isSaveChange = true)
@@ -175,10 +275,10 @@ namespace Business.EntityFrameworkCore.Repositories
             return base.DeleteAsync(entitys, isSaveChange);
         }
 
-        //执行Sql语句--------------------------------------------------------------------------------------------
+        //Execute sql--------------------------------------------------------------------------------------------
 
         /// <summary>
-        /// 执行纯Sql语句
+        /// Execute sql
         /// </summary>
         /// <param name="sql"></param>
         /// <returns></returns>
@@ -188,7 +288,7 @@ namespace Business.EntityFrameworkCore.Repositories
         }
 
         /// <summary>
-        /// 执行纯Sql语句(异步方式)
+        /// Execute sql(asynchronous)
         /// </summary>
         /// <param name="sql"></param>
         /// <returns></returns>
@@ -198,7 +298,7 @@ namespace Business.EntityFrameworkCore.Repositories
         }
 
         /// <summary>
-        /// 执行带参数的sql语句
+        /// Execute sql with parameters
         /// </summary>
         /// <param name="sql"></param>
         /// <param name="spList"></param>
@@ -209,7 +309,7 @@ namespace Business.EntityFrameworkCore.Repositories
         }
 
         /// <summary>
-        /// 执行带参数的sql语句(异步方式)
+        /// Execute sql with parameters(asynchronous)
         /// </summary>
         /// <param name="sql"></param>
         /// <param name="spList"></param>
@@ -220,7 +320,7 @@ namespace Business.EntityFrameworkCore.Repositories
         }
 
         /// <summary>
-        /// 执行sql语句,获取DataTable
+        /// Execute sql and return DataTable
         /// </summary>
         /// <param name="sql"></param>
         /// <returns></returns>
@@ -230,7 +330,7 @@ namespace Business.EntityFrameworkCore.Repositories
         }
 
         /// <summary>
-        /// 执行带参数的sql语句,获取DataTable
+        /// Execute sql with parameters and return DataTable
         /// </summary>
         /// <param name="sql"></param>
         /// <param name="spList"></param>
@@ -251,9 +351,8 @@ namespace Business.EntityFrameworkCore.Repositories
 
         #endregion
 
-        #region 未测
+        #region not Testing
 
-        //Not work
         public IQueryable<DeveloperTest> GetDeveloperTestsByConditionNoAsync(params Expression<Func<DeveloperTest, bool>>[] predicate)
         {
             return base.GetAllIncluding(predicate);

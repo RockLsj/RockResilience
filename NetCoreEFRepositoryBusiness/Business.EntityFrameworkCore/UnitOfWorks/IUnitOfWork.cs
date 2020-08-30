@@ -1,10 +1,8 @@
-﻿using System;
-
-using Business.EntityFrameworkCore.Repositories;
+﻿using Business.EntityFrameworkCore.Repositories;
 
 namespace Business.EntityFrameworkCore.UnitOfWorks
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork
     {
         #region Test
 
@@ -14,8 +12,6 @@ namespace Business.EntityFrameworkCore.UnitOfWorks
         IStudentTest2Repository StudentTest2s { get; }
         IStudentTest3Repository StudentTest3s { get; }
 
-        #endregion        
-
-        int Complete();
+        #endregion
     }
 }

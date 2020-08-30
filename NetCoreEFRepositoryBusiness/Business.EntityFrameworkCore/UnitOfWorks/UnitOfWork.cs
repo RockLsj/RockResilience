@@ -21,27 +21,16 @@ namespace Business.EntityFrameworkCore.UnitOfWorks
             IConsumeDetailTestsRepository consumeDetailTests,
             IStudentTest2Repository studentTest2s,
             IStudentTest3Repository studentTest3s
-            )//ApplicationContext context
+            )
         {
             _context = context;
 
-            //Developers = new DeveloperRepository(_context);
             //test
             Developers = developers;
             PeopleTests = peopleTests;
             ConsumeDetailTests = consumeDetailTests;
             StudentTest2s = studentTest2s;
             StudentTest3s = studentTest3s;
-        }
-
-        public int Complete()
-        {
-            return int.Parse(_context.SaveChanges().ToString());
-        }
-
-        public void Dispose()
-        {
-            _context.Dispose();
         }
     }
 }

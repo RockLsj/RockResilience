@@ -11,16 +11,14 @@ namespace Business.EntityFrameworkCore
         DbSet<StudentTest> StudentTests { get; set; }
         DbSet<PeopleTest> PeopleTests { get; set; }
         DbSet<ConsumeDetailTest> ConsumeDetailTests { get; set; }
-        public DbSet<StudentTest2> StudentTest2s { get; set; }
-        public DbSet<GradeTest2> GradeTest2s { get; set; }
 
-        public DbSet<StudentTest3> StudentTest3 { get; set; }
-        public DbSet<CourseTest3> CourseTest3 { get; set; }
-        public DbSet<StudentCourse3> StudentCourse3 { get; set; }
+        DbSet<StudentTest2> StudentTest2s { get; set; }
+        DbSet<GradeTest2> GradeTest2s { get; set; }
+
+        DbSet<StudentTest3> StudentTest3 { get; set; }
+        DbSet<CourseTest3> CourseTest3 { get; set; }
+        DbSet<StudentCourse3> StudentCourse3 { get; set; }
 
         Task<int> SaveChanges();
-
-        void Dispose();
-
     }
 }
