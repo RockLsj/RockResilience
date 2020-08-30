@@ -1,0 +1,52 @@
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketListenerDemo.exe
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketListenerDemo.deps.json
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketListenerDemo.runtimeconfig.json
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketListenerDemo.runtimeconfig.dev.json
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketListenerDemo.dll
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketListenerDemo.pdb
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketListenerDemo.AssemblyInfoInputs.cache
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketListenerDemo.AssemblyInfo.cs
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketListenerDemo.csproj.CoreCompileInputs.cache
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketListenerDemo.dll
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketListenerDemo.pdb
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketListenerDemo.genruntimeconfig.cache
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketListenerDemo.csprojAssemblyReference.cache
+H:\.Net Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.exe
+H:\.Net Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.deps.json
+H:\.Net Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.runtimeconfig.json
+H:\.Net Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.runtimeconfig.dev.json
+H:\.Net Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.dll
+H:\.Net Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.pdb
+H:\.Net Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.csprojAssemblyReference.cache
+H:\.Net Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.AssemblyInfoInputs.cache
+H:\.Net Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.AssemblyInfo.cs
+H:\.Net Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.csproj.CoreCompileInputs.cache
+H:\.Net Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.dll
+H:\.Net Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.pdb
+H:\.Net Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.genruntimeconfig.cache
+H:\.Net Socket\ok 1\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.exe
+H:\.Net Socket\ok 1\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.deps.json
+H:\.Net Socket\ok 1\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.runtimeconfig.json
+H:\.Net Socket\ok 1\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.runtimeconfig.dev.json
+H:\.Net Socket\ok 1\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.dll
+H:\.Net Socket\ok 1\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.pdb
+H:\.Net Socket\ok 1\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.csprojAssemblyReference.cache
+H:\.Net Socket\ok 1\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.AssemblyInfoInputs.cache
+H:\.Net Socket\ok 1\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.AssemblyInfo.cs
+H:\.Net Socket\ok 1\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.csproj.CoreCompileInputs.cache
+H:\.Net Socket\ok 1\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.dll
+H:\.Net Socket\ok 1\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.pdb
+H:\.Net Socket\ok 1\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.genruntimeconfig.cache
+H:\RockResilience\Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.exe
+H:\RockResilience\Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.deps.json
+H:\RockResilience\Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.runtimeconfig.json
+H:\RockResilience\Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.runtimeconfig.dev.json
+H:\RockResilience\Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.dll
+H:\RockResilience\Socket\SocketListener\bin\Debug\netcoreapp3.1\SocketListenerDemo.pdb
+H:\RockResilience\Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.csprojAssemblyReference.cache
+H:\RockResilience\Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.AssemblyInfoInputs.cache
+H:\RockResilience\Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.AssemblyInfo.cs
+H:\RockResilience\Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.csproj.CoreCompileInputs.cache
+H:\RockResilience\Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.dll
+H:\RockResilience\Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.pdb
+H:\RockResilience\Socket\SocketListener\obj\Debug\netcoreapp3.1\SocketListenerDemo.genruntimeconfig.cache

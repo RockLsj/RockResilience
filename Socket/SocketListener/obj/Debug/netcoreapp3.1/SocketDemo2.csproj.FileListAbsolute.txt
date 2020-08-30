@@ -1,0 +1,13 @@
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketDemo2.exe
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketDemo2.deps.json
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketDemo2.runtimeconfig.json
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketDemo2.runtimeconfig.dev.json
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketDemo2.dll
+H:\.Net Socket\SocketDemo2\bin\Debug\netcoreapp3.1\SocketDemo2.pdb
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketDemo2.csprojAssemblyReference.cache
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketDemo2.AssemblyInfoInputs.cache
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketDemo2.AssemblyInfo.cs
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketDemo2.csproj.CoreCompileInputs.cache
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketDemo2.dll
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketDemo2.pdb
+H:\.Net Socket\SocketDemo2\obj\Debug\netcoreapp3.1\SocketDemo2.genruntimeconfig.cache

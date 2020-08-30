@@ -1,0 +1,39 @@
+H:\.Net Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.exe
+H:\.Net Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.deps.json
+H:\.Net Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.runtimeconfig.json
+H:\.Net Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.runtimeconfig.dev.json
+H:\.Net Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.dll
+H:\.Net Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.pdb
+H:\.Net Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.AssemblyInfoInputs.cache
+H:\.Net Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.AssemblyInfo.cs
+H:\.Net Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.csproj.CoreCompileInputs.cache
+H:\.Net Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.dll
+H:\.Net Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.pdb
+H:\.Net Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.genruntimeconfig.cache
+H:\.Net Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.csprojAssemblyReference.cache
+H:\.Net Socket\ok 1\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.exe
+H:\.Net Socket\ok 1\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.deps.json
+H:\.Net Socket\ok 1\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.runtimeconfig.json
+H:\.Net Socket\ok 1\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.runtimeconfig.dev.json
+H:\.Net Socket\ok 1\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.dll
+H:\.Net Socket\ok 1\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.pdb
+H:\.Net Socket\ok 1\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.csprojAssemblyReference.cache
+H:\.Net Socket\ok 1\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.AssemblyInfoInputs.cache
+H:\.Net Socket\ok 1\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.AssemblyInfo.cs
+H:\.Net Socket\ok 1\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.csproj.CoreCompileInputs.cache
+H:\.Net Socket\ok 1\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.dll
+H:\.Net Socket\ok 1\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.pdb
+H:\.Net Socket\ok 1\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.genruntimeconfig.cache
+H:\RockResilience\Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.exe
+H:\RockResilience\Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.deps.json
+H:\RockResilience\Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.runtimeconfig.json
+H:\RockResilience\Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.runtimeconfig.dev.json
+H:\RockResilience\Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.dll
+H:\RockResilience\Socket\SocketClient\bin\Debug\netcoreapp3.1\SocketClient.pdb
+H:\RockResilience\Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.csprojAssemblyReference.cache
+H:\RockResilience\Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.AssemblyInfoInputs.cache
+H:\RockResilience\Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.AssemblyInfo.cs
+H:\RockResilience\Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.csproj.CoreCompileInputs.cache
+H:\RockResilience\Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.dll
+H:\RockResilience\Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.pdb
+H:\RockResilience\Socket\SocketClient\obj\Debug\netcoreapp3.1\SocketClient.genruntimeconfig.cache
