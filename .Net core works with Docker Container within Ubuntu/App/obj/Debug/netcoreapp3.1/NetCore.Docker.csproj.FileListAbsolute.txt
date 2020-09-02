@@ -1,0 +1,26 @@
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\bin\Debug\netcoreapp3.1\NetCore.Docker.exe
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\bin\Debug\netcoreapp3.1\NetCore.Docker.deps.json
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\bin\Debug\netcoreapp3.1\NetCore.Docker.runtimeconfig.json
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\bin\Debug\netcoreapp3.1\NetCore.Docker.runtimeconfig.dev.json
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\bin\Debug\netcoreapp3.1\NetCore.Docker.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\bin\Debug\netcoreapp3.1\NetCore.Docker.pdb
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\obj\Debug\netcoreapp3.1\NetCore.Docker.csprojAssemblyReference.cache
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\obj\Debug\netcoreapp3.1\NetCore.Docker.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\obj\Debug\netcoreapp3.1\NetCore.Docker.AssemblyInfo.cs
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\obj\Debug\netcoreapp3.1\NetCore.Docker.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\obj\Debug\netcoreapp3.1\NetCore.Docker.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\obj\Debug\netcoreapp3.1\NetCore.Docker.pdb
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\App\obj\Debug\netcoreapp3.1\NetCore.Docker.genruntimeconfig.cache
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\bin\Debug\netcoreapp3.1\NetCore.Docker.exe
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\bin\Debug\netcoreapp3.1\NetCore.Docker.deps.json
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\bin\Debug\netcoreapp3.1\NetCore.Docker.runtimeconfig.json
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\bin\Debug\netcoreapp3.1\NetCore.Docker.runtimeconfig.dev.json
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\bin\Debug\netcoreapp3.1\NetCore.Docker.dll
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\bin\Debug\netcoreapp3.1\NetCore.Docker.pdb
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\obj\Debug\netcoreapp3.1\NetCore.Docker.csprojAssemblyReference.cache
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\obj\Debug\netcoreapp3.1\NetCore.Docker.AssemblyInfoInputs.cache
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\obj\Debug\netcoreapp3.1\NetCore.Docker.AssemblyInfo.cs
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\obj\Debug\netcoreapp3.1\NetCore.Docker.csproj.CoreCompileInputs.cache
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\obj\Debug\netcoreapp3.1\NetCore.Docker.dll
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\obj\Debug\netcoreapp3.1\NetCore.Docker.pdb
+H:\RockResilience\.Net core works with Docker Container within Ubuntu\App\obj\Debug\netcoreapp3.1\NetCore.Docker.genruntimeconfig.cache

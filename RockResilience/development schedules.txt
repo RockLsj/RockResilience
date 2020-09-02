@@ -1,2 +1,4 @@
-wcf
+Net Core works with Docker Within Ubuntu
 and something about azure practice noting.
+wcf
+

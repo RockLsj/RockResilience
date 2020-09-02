@@ -35,8 +35,84 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCF", "WCF", "{C5C18AB1-96B4-4DCB-8065-7265CC257D81}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net Core works with Docker Within Ubuntu", "Net Core works with Docker Within Ubuntu", "{32AE05F8-03C3-4F41-88E4-F0A0A7AD6F81}"
+	ProjectSection(SolutionItems) = preProject
+		note10[Kestrel web server implementation in ASP.NET Core].txt = note10[Kestrel web server implementation in ASP.NET Core].txt
+		note11[Host ASP.NET Core on Windows with IIS].txt = note11[Host ASP.NET Core on Windows with IIS].txt
+		note12[Publish an ASP.NET Core app to IIS].txt = note12[Publish an ASP.NET Core app to IIS].txt
+		note13[ASP.NET Core Module].txt = note13[ASP.NET Core Module].txt
+		note14[Development-time IIS support in Visual Studio for ASP.NET Core].txt = note14[Development-time IIS support in Visual Studio for ASP.NET Core].txt
+		note15[IIS modules with ASP.NET Core].txt = note15[IIS modules with ASP.NET Core].txt
+		note16[Troubleshoot ASP.NET Core on Azure App Service and IIS].txt = note16[Troubleshoot ASP.NET Core on Azure App Service and IIS].txt
+		note17[Common errors reference for Azure App Service and IIS with ASP.NET Core].txt = note17[Common errors reference for Azure App Service and IIS with ASP.NET Core].txt
+		note18[Transform web.config].txt = note18[Transform web.config].txt
+		note1[Containerize a .NET Core app].txt = note1[Containerize a .NET Core app].txt
+		note2[Docker images for ASP.NET Core].txt = note2[Docker images for ASP.NET Core].txt
+		note3[Developing ASP.NET Core Applications with Docker over HTTPS].txt = note3[Developing ASP.NET Core Applications with Docker over HTTPS].txt
+		note4[Configure ASP.NET Core to work with proxy servers and load balancers].txt = note4[Configure ASP.NET Core to work with proxy servers and load balancers].txt
+		note5[Host ASP.NET Core in a web farm].txt = note5[Host ASP.NET Core in a web farm].txt
+		note6[Host ASP.NET Core in a Windows Service].txt = note6[Host ASP.NET Core in a Windows Service].txt
+		note7[Host ASP.NET Core on Linux with Nginx].txt = note7[Host ASP.NET Core on Linux with Nginx].txt
+		note8[Host ASP.NET Core on Linux with Apache].txt = note8[Host ASP.NET Core on Linux with Apache].txt
+		note9[HTTP.sys web server implementation in ASP.NET Core].txt = note9[HTTP.sys web server implementation in ASP.NET Core].txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{CA94CFFF-5EFA-413F-B6FE-EE1CF73E03E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Docker", "..\.Net core works with Docker Container within Ubuntu\App\NetCore.Docker.csproj", "{323C84CF-B6D5-4E5E-8098-BB024E7E7E19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevOps", "DevOps", "{6896233E-5194-40DD-9999-726103C72CFE}"
+	ProjectSection(SolutionItems) = preProject
+		note1[DevOps with ASP.NET Core and Azure].txt = note1[DevOps with ASP.NET Core and Azure].txt
+		note2[Tools and downloads].txt = note2[Tools and downloads].txt
+		note3[Deploy an app to App Service].txt = note3[Deploy an app to App Service].txt
+		note4[Continuous integration and deployment].txt = note4[Continuous integration and deployment].txt
+		note5[Monitor and debug].txt = note5[Monitor and debug].txt
+		note6[Next steps].txt = note6[Next steps].txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure App Service", "Azure App Service", "{D2C31169-FCB2-4826-BFAA-F0B53D7A7935}"
+	ProjectSection(SolutionItems) = preProject
+		note1[Deploy ASP.NET Core apps to Azure App Service].txt = note1[Deploy ASP.NET Core apps to Azure App Service].txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{207916D0-56AB-4517-9DC8-FBBECCDD6B9A}"
+	ProjectSection(SolutionItems) = preProject
+		note1[Razor Pages with Entity Framework Core in ASP.NET Core - Tutorial 1 of 8].txt = note1[Razor Pages with Entity Framework Core in ASP.NET Core - Tutorial 1 of 8].txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test, debug, and troubleshoot", "Test, debug, and troubleshoot", "{31DE46DE-6991-4116-B523-D62A5CEF34A3}"
+	ProjectSection(SolutionItems) = preProject
+		note1[Razor Pages unit tests in ASP.NET Core].txt = note1[Razor Pages unit tests in ASP.NET Core].txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Remote Procedure Call apps", "Remote Procedure Call apps", "{1F2AF614-BDCA-4852-913E-C08C22CC3833}"
+	ProjectSection(SolutionItems) = preProject
+		note1[Introduction to gRPC on .NET Core].txt = note1[Introduction to gRPC on .NET Core].txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Real-time apps", "Real-time apps", "{C217E056-BDE2-4806-A9BF-77BEFB80E96F}"
+	ProjectSection(SolutionItems) = preProject
+		note1[Introduction to ASP.NET Core SignalR].txt = note1[Introduction to ASP.NET Core SignalR].txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web API apps", "Web API apps", "{6E2C03F8-DE06-4449-8BB2-53725498E3FB}"
+	ProjectSection(SolutionItems) = preProject
+		note1[Create web APIs with ASP.NET Core].txt = note1[Create web APIs with ASP.NET Core].txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web apps[doing]", "Web apps[doing]", "{731C9A75-52F2-468D-ABBE-5582CD614575}"
+	ProjectSection(SolutionItems) = preProject
+		note1[Introduction to Razor Pages in ASP.NET Core].txt = note1[Introduction to Razor Pages in ASP.NET Core].txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learn Docs", "Learn Docs", "{05167046-59C0-4CED-954A-89156ED621AA}"
+	ProjectSection(SolutionItems) = preProject
+		Address.txt = Address.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RazorPagesPrj", "RazorPagesPrj", "{AE6F4798-3300-4DA5-BC70-0D16FC0D7926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesMovie", "RazorPagesMovie\RazorPagesMovie.csproj", "{EBE7A671-47DB-4232-9530-A812001E5779}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +156,14 @@ Global
 		{08BCEF84-C080-432F-B25B-FC51CFBC2EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08BCEF84-C080-432F-B25B-FC51CFBC2EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08BCEF84-C080-432F-B25B-FC51CFBC2EC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{323C84CF-B6D5-4E5E-8098-BB024E7E7E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{323C84CF-B6D5-4E5E-8098-BB024E7E7E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{323C84CF-B6D5-4E5E-8098-BB024E7E7E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{323C84CF-B6D5-4E5E-8098-BB024E7E7E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE7A671-47DB-4232-9530-A812001E5779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE7A671-47DB-4232-9530-A812001E5779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE7A671-47DB-4232-9530-A812001E5779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE7A671-47DB-4232-9530-A812001E5779}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +178,16 @@ Global
 		{403E4691-3D21-4F4A-998E-6D39DF5050F7} = {66FC2B7B-B842-40FE-A21D-A1A2D5BCD807}
 		{3BFAEC45-D38A-4AF8-8A21-9D7A834E9A7D} = {125E9670-727A-44FC-97BB-B84AA3E245F6}
 		{08BCEF84-C080-432F-B25B-FC51CFBC2EC8} = {125E9670-727A-44FC-97BB-B84AA3E245F6}
+		{323C84CF-B6D5-4E5E-8098-BB024E7E7E19} = {32AE05F8-03C3-4F41-88E4-F0A0A7AD6F81}
+		{6896233E-5194-40DD-9999-726103C72CFE} = {32AE05F8-03C3-4F41-88E4-F0A0A7AD6F81}
+		{D2C31169-FCB2-4826-BFAA-F0B53D7A7935} = {32AE05F8-03C3-4F41-88E4-F0A0A7AD6F81}
+		{207916D0-56AB-4517-9DC8-FBBECCDD6B9A} = {32AE05F8-03C3-4F41-88E4-F0A0A7AD6F81}
+		{31DE46DE-6991-4116-B523-D62A5CEF34A3} = {32AE05F8-03C3-4F41-88E4-F0A0A7AD6F81}
+		{1F2AF614-BDCA-4852-913E-C08C22CC3833} = {32AE05F8-03C3-4F41-88E4-F0A0A7AD6F81}
+		{C217E056-BDE2-4806-A9BF-77BEFB80E96F} = {32AE05F8-03C3-4F41-88E4-F0A0A7AD6F81}
+		{6E2C03F8-DE06-4449-8BB2-53725498E3FB} = {32AE05F8-03C3-4F41-88E4-F0A0A7AD6F81}
+		{731C9A75-52F2-468D-ABBE-5582CD614575} = {05167046-59C0-4CED-954A-89156ED621AA}
+		{EBE7A671-47DB-4232-9530-A812001E5779} = {AE6F4798-3300-4DA5-BC70-0D16FC0D7926}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2ECFD30C-A2A8-4E2A-A743-92980F5986B8}
