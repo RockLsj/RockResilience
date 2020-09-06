@@ -1,2 +1,9 @@
 source:
-https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-3.1
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio
+
+Create a web API with ASP.NET Core[ok]
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio
+
+doing
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-3.1&tabs=visual-studio
+
