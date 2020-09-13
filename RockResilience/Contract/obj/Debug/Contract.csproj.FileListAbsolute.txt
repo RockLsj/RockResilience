@@ -1,0 +1,6 @@
+H:\RockResilience\RockResilience\Contract\bin\Debug\Contract.dll
+H:\RockResilience\RockResilience\Contract\bin\Debug\Contract.pdb
+H:\RockResilience\RockResilience\Contract\obj\Debug\Contract.csprojAssemblyReference.cache
+H:\RockResilience\RockResilience\Contract\obj\Debug\Contract.csproj.CoreCompileInputs.cache
+H:\RockResilience\RockResilience\Contract\obj\Debug\Contract.dll
+H:\RockResilience\RockResilience\Contract\obj\Debug\Contract.pdb

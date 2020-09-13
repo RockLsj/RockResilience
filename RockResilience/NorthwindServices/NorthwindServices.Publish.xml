@@ -1,0 +1,14 @@
+<publishData>
+  <publishTarget publishUrl="http://localhost:7741/">
+    <file relUrl="NorthwindServices.CategoryServices.CategoryService.svc" publishTime="11/19/2013 21:21:57" />
+    <file relUrl="ServiceHosts/ProductServiceHost.svc" publishTime="10/31/2013 16:51:05" />
+    <file relUrl="bin/NorthwindContracts.pdb" publishTime="11/14/2013 14:28:37" />
+    <file relUrl="bin/NorthwindContracts.dll" publishTime="11/14/2013 14:28:37" />
+    <file relUrl="Web.config" publishTime="10/31/2013 17:34:44" />
+    <file relUrl="bin/NorthwindServices.pdb" publishTime="11/19/2013 21:18:02" />
+    <file relUrl="bin/NorthwindServices.dll" publishTime="11/19/2013 21:18:02" />
+    <file relUrl="NorthwindServices.ProductServices.ProductService.svc" publishTime="11/19/2013 21:21:57" />
+    <file relUrl="ServiceHosts/CategoryServiceHost.svc" publishTime="10/31/2013 17:36:34" />
+    <file relUrl="bin/NorthwindServices.dll.config" publishTime="10/31/2013 17:34:44" />
+  </publishTarget>
+</publishData>

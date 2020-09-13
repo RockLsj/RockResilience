@@ -1,0 +1,10 @@
+H:\RockResilience\RockResilience\NorthwindServices\bin\Debug\Services.dll.config
+H:\RockResilience\RockResilience\NorthwindServices\bin\Debug\Services.dll
+H:\RockResilience\RockResilience\NorthwindServices\bin\Debug\Services.pdb
+H:\RockResilience\RockResilience\NorthwindServices\bin\Debug\Contracts.dll
+H:\RockResilience\RockResilience\NorthwindServices\bin\Debug\Contracts.pdb
+H:\RockResilience\RockResilience\NorthwindServices\obj\Debug\Services.csprojAssemblyReference.cache
+H:\RockResilience\RockResilience\NorthwindServices\obj\Debug\Services.csproj.CoreCompileInputs.cache
+H:\RockResilience\RockResilience\NorthwindServices\obj\Debug\Services.csproj.CopyComplete
+H:\RockResilience\RockResilience\NorthwindServices\obj\Debug\Services.dll
+H:\RockResilience\RockResilience\NorthwindServices\obj\Debug\Services.pdb

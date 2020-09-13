@@ -1,0 +1,7 @@
+H:\RockResilience\RockResilience\Contract\bin\Debug\NorthwindContracts.dll
+H:\RockResilience\RockResilience\Contract\bin\Debug\NorthwindContracts.pdb
+H:\RockResilience\RockResilience\Contract\bin\Debug\System.Runtime.Serialization.Primitives.dll
+H:\RockResilience\RockResilience\Contract\obj\Debug\NorthwindContracts.csproj.CoreCompileInputs.cache
+H:\RockResilience\RockResilience\Contract\obj\Debug\NorthwindContracts.csproj.CopyComplete
+H:\RockResilience\RockResilience\Contract\obj\Debug\NorthwindContracts.dll
+H:\RockResilience\RockResilience\Contract\obj\Debug\NorthwindContracts.pdb
