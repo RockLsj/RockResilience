@@ -1,7 +1,0 @@
-H:\RockResilience\RockResilience\Contract\bin\Debug\Contracts.dll
-H:\RockResilience\RockResilience\Contract\bin\Debug\Contracts.pdb
-H:\RockResilience\RockResilience\Contract\bin\Debug\System.Runtime.Serialization.Primitives.dll
-H:\RockResilience\RockResilience\Contract\obj\Debug\Contracts.csproj.CoreCompileInputs.cache
-H:\RockResilience\RockResilience\Contract\obj\Debug\Contracts.csproj.CopyComplete
-H:\RockResilience\RockResilience\Contract\obj\Debug\Contracts.dll
-H:\RockResilience\RockResilience\Contract\obj\Debug\Contracts.pdb
