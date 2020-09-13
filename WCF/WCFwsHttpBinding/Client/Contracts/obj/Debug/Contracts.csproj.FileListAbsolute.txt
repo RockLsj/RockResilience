@@ -1,0 +1,6 @@
+H:\RockResilience\WCF\WCFwsHttpBinding\Client\Contracts\bin\Debug\Contracts.dll
+H:\RockResilience\WCF\WCFwsHttpBinding\Client\Contracts\bin\Debug\Contracts.pdb
+H:\RockResilience\WCF\WCFwsHttpBinding\Client\Contracts\obj\Debug\Contracts.csprojAssemblyReference.cache
+H:\RockResilience\WCF\WCFwsHttpBinding\Client\Contracts\obj\Debug\Contracts.csproj.CoreCompileInputs.cache
+H:\RockResilience\WCF\WCFwsHttpBinding\Client\Contracts\obj\Debug\Contracts.dll
+H:\RockResilience\WCF\WCFwsHttpBinding\Client\Contracts\obj\Debug\Contracts.pdb
