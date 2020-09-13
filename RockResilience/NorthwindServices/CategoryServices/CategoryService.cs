@@ -2,6 +2,7 @@
 using Contracts.ServiceContract;
 using System.ServiceModel;
 
+//rock
 namespace Services.CategoryServices
 {
     [ServiceBehavior(Name = "CategoryService", Namespace = "http://rock.com/categoryservice")]
