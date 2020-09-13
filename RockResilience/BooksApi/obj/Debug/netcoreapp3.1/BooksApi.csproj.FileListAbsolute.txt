@@ -22,9 +22,11 @@ H:\RockResilience\RockResilience\BooksApi\bin\Debug\netcoreapp3.1\SharpCompress.
 H:\RockResilience\RockResilience\BooksApi\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
 H:\RockResilience\RockResilience\BooksApi\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
 H:\RockResilience\RockResilience\BooksApi\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
-H:\RockResilience\RockResilience\BooksApi\obj\Debug\netcoreapp3.1\BooksApi.csproj.CoreCompileInputs.cache
-H:\RockResilience\RockResilience\BooksApi\obj\Debug\netcoreapp3.1\BooksApi.MvcApplicationPartsAssemblyInfo.cache
 H:\RockResilience\RockResilience\BooksApi\obj\Debug\netcoreapp3.1\BooksApi.csproj.CopyComplete
 H:\RockResilience\RockResilience\BooksApi\obj\Debug\netcoreapp3.1\BooksApi.dll
 H:\RockResilience\RockResilience\BooksApi\obj\Debug\netcoreapp3.1\BooksApi.pdb
 H:\RockResilience\RockResilience\BooksApi\obj\Debug\netcoreapp3.1\BooksApi.genruntimeconfig.cache
+H:\RockResilience\RockResilience\BooksApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+H:\RockResilience\RockResilience\BooksApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+H:\RockResilience\RockResilience\BooksApi\obj\Debug\netcoreapp3.1\BooksApi.csproj.CoreCompileInputs.cache
+H:\RockResilience\RockResilience\BooksApi\obj\Debug\netcoreapp3.1\BooksApi.MvcApplicationPartsAssemblyInfo.cache
