@@ -12,23 +12,28 @@ using System.Reflection;
 using System.IO;
 using System;
 using Microsoft.OpenApi.Models;
+using Business.Api.Models;
 
 namespace Business.Api
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment environment)
         {
             Configuration = configuration;
+            Environment = environment;
         }
 
         public IConfiguration Configuration { get; }
 
+        public IWebHostEnvironment Environment { get; }
+
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(
+            IServiceCollection services)
         {
             services.AddControllers().AddNewtonsoftJson(options =>
-            options.SerializerSettings.ReferenceLoopHandling=Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -59,11 +64,19 @@ namespace Business.Api
             /*
              * this is important
              */
+            string strDbConnection = "";
+            if (Environment.IsDevelopment())
+            {
+                strDbConnection = Configuration.GetConnectionString("DefaultConnection");
+            }
+            else
+            {
+                strDbConnection = Configuration.GetConnectionString("DefaultConnectionTest");
+            }
             services.AddDbContext<RockResilienceContext>(options =>
             options.UseSqlServer(
-                Configuration.GetConnectionString("DefaultConnection"),
+                strDbConnection,
                 b => b.MigrationsAssembly("Business.Api")));
-            //typeof(ApplicationContext).Assembly.FullName)
 
             #region Repositories
 
@@ -79,6 +92,10 @@ namespace Business.Api
             #endregion
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+
+
+            services.Configure<MapDisplaySettingsProduction>(Configuration.GetSection("DisplaySettingsProduction"));
+            services.Configure<MapDisplaySettingsTest>(Configuration.GetSection("DisplaySettingsTest"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -6,6 +6,10 @@ using Business.EntityFrameworkCore.UnitOfWorks;
 using Business.Domain.Entities;
 using Business.Services;
 using Business.Services.DTO.Req;
+using Business.Api.Models;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 
 namespace Business.Api.Controllers
 {
@@ -22,11 +26,41 @@ namespace Business.Api.Controllers
 
         private Rsp rsp = new Rsp();
 
-        public DeveloperController(IUnitOfWork unitOfWork)
+        private readonly MapDisplaySettingsProduction _settings;
+        private readonly MapDisplaySettingsTest _settingsTest;
+
+        private string AppTitle { get; set; }
+        private bool ShowCopyright { get; set; }
+
+        public IWebHostEnvironment Environment { get; }
+
+        public DeveloperController(
+            IUnitOfWork unitOfWork,
+            IOptionsSnapshot<MapDisplaySettingsProduction> settings,
+            IOptionsSnapshot<MapDisplaySettingsTest> settingsTest,
+
+            IWebHostEnvironment environment)
         {
             _unitOfWork = unitOfWork;
 
             _service.UnitOfWork = _unitOfWork;
+
+            Environment = environment;
+
+            if (Environment.IsDevelopment())
+            {
+                _settings = settings.Value;
+
+                AppTitle = _settings.AppTitle;
+                ShowCopyright = _settings.ShowCopyright;
+            }
+            else
+            {
+                _settingsTest = settingsTest.Value;
+
+                AppTitle = _settingsTest.AppTitle;
+                ShowCopyright = _settingsTest.ShowCopyright;
+            }
         }
 
         #region ***select***
@@ -532,6 +566,8 @@ namespace Business.Api.Controllers
         [HttpPost("Testing")]
         public IActionResult Testing(ReqGetDeveloperTestById req)
         {
+
+
             return Ok(null);
         }
 
