@@ -158,7 +158,7 @@ namespace Business.Services
             return list;
         }
 
-        public List<DeveloperTest> GetDeveloperTestsByConditionV2(List<int> ListId, List<string>  ListName)
+        public List<DeveloperTest> GetDeveloperTestsByConditionV2(List<int> ListId, List<string> ListName)
         {
             Expression<Func<DeveloperTest, bool>> whereForm = ExpressionExtensions.False<DeveloperTest>();
 
@@ -246,9 +246,6 @@ namespace Business.Services
 
         public bool DeleteDeveloperTest(int id)
         {
-            Expression<Func<DeveloperTest, bool>> whereForm = ExpressionExtensions.True<DeveloperTest>();
-            whereForm = whereForm.And(e => e.Id == id);
-
             DeveloperTest e = new DeveloperTest();
             e.Id = id;
 
@@ -297,6 +294,11 @@ namespace Business.Services
         }
 
         #endregion
+
+        public bool IsExist(int id)
+        {
+            return UnitOfWork.Developers.exist(e => e.Id == id);
+        }
 
     }
 }

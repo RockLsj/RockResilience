@@ -423,12 +423,9 @@ namespace EntityFrameworkCore.Repository
         /// <returns></returns>
         public bool Delete(TEntity entity, bool isSaveChange = true)
         {
-            var iq = _dbSet.Where(e => e.Id.Equals(entity.Id));
-            if (iq != null && iq.Count() == 1)
-            {
-                _dbSet.Attach(entity);
-                _dbSet.Remove(entity);
-            }
+            _dbSet.Attach(entity);
+            _dbSet.Remove(entity);
+
             return isSaveChange ? SaveChanges() > 0 : false;
         }
 

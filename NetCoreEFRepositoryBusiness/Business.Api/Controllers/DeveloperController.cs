@@ -10,6 +10,7 @@ using Business.Api.Models;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Business.Api.Filters;
 
 namespace Business.Api.Controllers
 {
@@ -462,17 +463,9 @@ namespace Business.Api.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpDelete("DeleteDeveloperTest")]
+        [HttpDelete("DeleteDeveloperTest"), EnsureModelExists]
         public IActionResult DeleteDeveloperTest(int id)
         {
-            //bool bExist = _unitOfWork.Developers.exist(whereForm);
-            //if (!bExist)
-            //{
-            //rsp.Success = false;
-            //rsp.Content = NotFound().StatusCode.ToString();
-            //return Ok(rsp);
-            //}
-
             rsp.Success = _service.DeleteDeveloperTest(id);
 
             return Ok(rsp);
