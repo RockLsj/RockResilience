@@ -1,0 +1,14 @@
+﻿add logging[finish]
+the steps of add logging into Business.Api:
+1.
+install packages:
+Serilog
+Serilog.AspNetCore
+Serilog.Extensions.Logging.File
+Serilog.Filters.Expressions
+2.add "Serilog" configuration section in appsettings.json file;
+3.in ConfigurationService Method of Startup.cs, add services.AddLogging();
+4.in CreateHostBuilder method of Program.cs, add UseSerilog method;
+5.add _logger related code in Controller.
+
+add action filter:

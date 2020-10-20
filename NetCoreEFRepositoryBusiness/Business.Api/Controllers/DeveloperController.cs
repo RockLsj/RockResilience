@@ -11,6 +11,8 @@ using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Business.Api.Filters;
+using Microsoft.Extensions.Logging;
+using System;
 
 namespace Business.Api.Controllers
 {
@@ -35,12 +37,16 @@ namespace Business.Api.Controllers
 
         public IWebHostEnvironment Environment { get; }
 
+        private ILogger _logger;
+
         public DeveloperController(
             IUnitOfWork unitOfWork,
             IOptionsSnapshot<MapDisplaySettingsProduction> settings,
             IOptionsSnapshot<MapDisplaySettingsTest> settingsTest,
 
-            IWebHostEnvironment environment)
+            IWebHostEnvironment environment,
+
+            ILogger<DeveloperController> logger)
         {
             _unitOfWork = unitOfWork;
 
@@ -62,6 +68,9 @@ namespace Business.Api.Controllers
                 AppTitle = _settingsTest.AppTitle;
                 ShowCopyright = _settingsTest.ShowCopyright;
             }
+
+            _logger = logger;
+            _service.Logger = _logger;
         }
 
         #region ***select***
@@ -91,10 +100,21 @@ namespace Business.Api.Controllers
         [HttpPost("GetDeveloperTestByName")]
         public IActionResult GetDeveloperTestByName(ReqGetDeveloperTestByName req)
         {
-            var e = _service.GetDeveloperTestByName(req.strName);
+            try
+            {
+                _logger.LogInformation("开始执行GetDeveloperTestByName");
 
-            rsp.Success = true;
-            rsp.Data = e;
+                var e = _service.GetDeveloperTestByName(req.strName);
+
+                rsp.Success = true;
+                rsp.Data = e;
+            }
+            catch (Exception e3)
+            {
+                _logger.LogWarning("执行方法GetDeveloperTestByName,出现异常:"+e3.ToString());
+            }
+
+            _logger.LogInformation("执行GetDeveloperTestByName结束");
 
             return Ok(rsp);
         }

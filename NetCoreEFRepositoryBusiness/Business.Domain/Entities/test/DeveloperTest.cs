@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Common.Domain.Entities;
 
 namespace Business.Domain.Entities
@@ -11,6 +12,7 @@ namespace Business.Domain.Entities
 
         public int Followers { get; set; }
 
+        [JsonIgnore]
         public int Id { get; set; }
     }
 }

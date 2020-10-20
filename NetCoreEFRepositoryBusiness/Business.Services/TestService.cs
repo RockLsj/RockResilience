@@ -9,12 +9,19 @@ using Common.Extensions;
 using Business.Domain.Entities;
 using Business.EntityFrameworkCore.UnitOfWorks;
 using Business.Services.DTO.Rsp;
+using Microsoft.Extensions.Logging;
 
 namespace Business.Services
 {
     public class TestService
     {
         public IUnitOfWork UnitOfWork
+        {
+            get;
+            set;
+        }
+
+        public ILogger Logger
         {
             get;
             set;

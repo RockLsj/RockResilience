@@ -7,6 +7,7 @@ using Business.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace Business.Api.Controllers
 {
@@ -16,16 +17,34 @@ namespace Business.Api.Controllers
     {
         private IRockResilienceDbContext _context;
 
-        public StudentController(IRockResilienceDbContext context)
+        private ILogger _logger;
+
+        public StudentController(IRockResilienceDbContext context,
+            ILogger<StudentController> logger)
         {
             _context = context;
+
+            _logger = logger;
+
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(StudentTest student)
         {
-            _context.StudentTests.Add(student);
-            await _context.SaveChanges();
+            try
+            {
+                _logger.LogInformation("开始执行Create");
+
+                _context.StudentTests.Add(student);
+                await _context.SaveChanges();
+            }
+            catch (Exception e3)
+            {
+                _logger.LogWarning("执行方法Create,出现异常:" + e3.ToString());
+            }
+
+            _logger.LogInformation("执行Create结束");
+
             return Ok(student.Id);
         }
 

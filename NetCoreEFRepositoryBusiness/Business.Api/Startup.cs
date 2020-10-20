@@ -78,6 +78,8 @@ namespace Business.Api
                 strDbConnection,
                 b => b.MigrationsAssembly("Business.Api")));
 
+            services.AddLogging();
+
             #region Repositories
 
             services.AddTransient<IRockResilienceDbContext, RockResilienceContext>();
